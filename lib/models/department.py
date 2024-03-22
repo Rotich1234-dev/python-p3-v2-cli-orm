@@ -77,6 +77,7 @@ class Department:
         self.id = CURSOR.lastrowid
         type(self).all[self.id] = self
 
+
     @classmethod
     def create(cls, name, location):
         """ Initialize a new Department instance and save the object to the database """
